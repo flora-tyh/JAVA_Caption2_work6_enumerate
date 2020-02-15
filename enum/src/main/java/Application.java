@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Application {
 
@@ -8,12 +9,7 @@ public class Application {
         Student stu2 = new Student("Bob", Sex.Female);
         Student stu3 = new Student("Solider", Sex.Male);
         Student stu4 = new Student("Cindy", Sex.Female);
-
-        ArrayList<Student> students = new ArrayList<>();
-        students.add(stu1);
-        students.add(stu2);
-        students.add(stu3);
-        students.add(stu4);
+        ArrayList<Student> students = new ArrayList<>(Arrays.asList(stu1, stu2, stu3, stu4));
 
         for (Student stu : students) {
             if (isMale(stu)) {
